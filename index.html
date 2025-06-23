@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,62 @@
     <title>なかむら編集室 - 編集の力で"伝える"をお手伝いします</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/script.css">
 </head>
+
 <body>
-    <section id="hero">
-        <div class="hero-container">
+    <header class="header">
+        <nav class="menu">
             <div class="logo-section">
                 <div class="logo" style="align-items: flex-start;">
-                    <img src="./Designimage/99-footer-logo.png" alt="ロゴ" class="logo-img" style="height: 45px; width: 45px; min-width: 45px; object-fit: contain; margin-right: 8px; margin-top: 0;">
-                    <span class="logo-text" style="color: #111; margin-top: 2px;">なかむら編集室</span>
+                    <img src="./Designimage/99-footer-logo.png" alt="ロゴ" class="logo-img"
+                        style="height: 35px; width: 35px; min-width: 35px; object-fit: contain; margin-right: 8px; margin-top: 0;">
+                    <span class="logo-text" style="color: var(--black); margin-top: 2px;">なかむら編集室</span>
                 </div>
             </div>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#mission" class="menu-link">MISSION</a></li>
+                <li class="menu-item"><a href="#service" class="menu-link">SERVICE</a></li>
+                <li class="menu-item"><a href="#talks" class="menu-link">Talks & Publications</a></li>
+                <li class="menu-item"><a href="#works" class="menu-link">WORKS</a></li>
+                <li class="menu-item"><a href="#contact" class="menu-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-container">
+
             <div class="catchphrase-section">
-                <h1 class="catchphrase">編集の力で"伝える"をお手伝いします。</h1>
+                <h1 class="catchphrase">編集の力で"伝える"を<br class="spbr">お手伝いします。</h1>
             </div>
         </div>
     </section>
 
     <section id="mission">
         <div class="mission-container">
-            <div class="mission-title section-image-title">
-                <img src="./Designimage/02-mission-title.png" alt="MISSION ミッション">
-            </div>
+            <h2 class="h2title">
+                <span class="subtitle">ミッション</span>
+                <span class="titlemain">MISSION</span>
+            </h2>
             <div class="mission-content">
                 <p class="mission-text">
-                    今はコンテンツが溢れる時代。個人がブログをつくり、SNSでは無数の投稿があります。<br>
-                    そんな時代において、自社、あるいは個人の「伝えたいこと」を「伝えたい人」に届けるのは<br>
+                    今はコンテンツが溢れる時代。個人がブログをつくり、SNSでは無数の投稿があります。<br class="pcbr">
+                    そんな時代において、自社、あるいは個人の「伝えたいこと」を「伝えたい人」に届けるのは<br class="pcbr">
                     非常に難しいと言えるでしょう。
                 </p>
                 <p class="mission-text">
-                    何か伝えたいことがあっても、果たしてそれをどの媒体でどのように伝えるのか。<br>
+                    何か伝えたいことがあっても、果たしてそれをどの媒体でどのように伝えるのか。<br class="pcbr">
                     ブログがいいのかSNSがいいのか、あるいは音声や動画、メルマガの方がいいのか？
                 </p>
                 <p class="mission-text">
-                    一昔前はメールやチラシなど、選択肢が少なかったからこそ迷いは生じませんでした。<br>
+                    一昔前はメールやチラシなど、選択肢が少なかったからこそ迷いは生じませんでした。<br class="pcbr">
                     しかし、コンテンツが溢れる現代においては、これらの判断が非常に難しいのです。
                 </p>
                 <p class="mission-emphasis">
@@ -51,520 +73,498 @@
                     「誰に」「何を」「どうやって」届けるか、編集の力をつかってサポート致します。
                 </p>
             </div>
+            <div class="mission-image">
+                <img src="./Designimage/dummy.png" alt="編集室のイラスト" class="mission-img">
+            </div>
         </div>
     </section>
 
     <section id="service">
         <div class="service-container">
-            <div class="service-title section-image-title">
-                <img src="./Designimage/03-service-title.png" alt="SERVICE 事業内容">
-            </div>
-            
+            <h2 class="h2title">
+                <span class="subtitle">事業内容</span>
+                <span class="titlemain">SERVICE</span>
+            </h2>
             <!-- サービス項目01 -->
-            <div class="service-item service-left">
-                <div class="service-image">
-                    <img src="./images/pen-writing.png" alt="Webメディアの記事ライティング">
-                </div>
+            <div class="service-item">
                 <div class="service-content">
                     <div class="service-title-row">
-                    <div class="service-number">01</div>
-                    <h3 class="service-name">Webメディアの記事ライティング</h3>
+                        <div class="service-number">01</div>
+                        <h3 class="service-name">Webメディアの記事ライティング</h3>
                     </div>
                     <p class="service-description">
                         Webメディア全般のライティングを承ります。マーケティング・不動産・金融をメインにしつつも、あらゆるジャンルのライティングが可能です。
                     </p>
                 </div>
+                <div class="service-image">
+                    <img src="./images/dummy.png" alt="Webメディアの記事ライティング">
+                </div>
             </div>
 
             <!-- サービス項目02 -->
-            <div class="service-item service-right">
-                <div class="service-image">
-                    <img src="./images/pen-writing.png" alt="インタビュー記事ライティング">
-                </div>
+            <div class="service-item">
                 <div class="service-content">
                     <div class="service-title-row">
-                    <div class="service-number">02</div>
-                    <h3 class="service-name">インタビュー記事ライティング</h3>
+                        <div class="service-number">02</div>
+                        <h3 class="service-name">Webメディアの記事ライティング</h3>
                     </div>
                     <p class="service-description">
-                        インタビュー案件も承っています。テーマ設定、インタビュー、記事の執筆など全てを請け負えます。
+                        Webメディア全般のライティングを承ります。マーケティング・不動産・金融をメインにしつつも、あらゆるジャンルのライティングが可能です。
                     </p>
+                </div>
+                <div class="service-image">
+                    <img src="./images/dummy.png" alt="Webメディアの記事ライティング">
                 </div>
             </div>
 
             <!-- サービス項目03 -->
-            <div class="service-item service-left">
-                <div class="service-image">
-                    <img src="./images/pen-writing.png" alt="書籍の編集・執筆">
-                </div>
+            <div class="service-item">
                 <div class="service-content">
                     <div class="service-title-row">
-                    <div class="service-number">03</div>
-                    <h3 class="service-name">書籍の編集・執筆</h3>
+                        <div class="service-number">03</div>
+                        <h3 class="service-name">Webメディアの記事ライティング</h3>
                     </div>
                     <p class="service-description">
-                        電子書籍や紙の書籍の編集・執筆をさせて頂きます。テーマ決め・インタビュー・構成作成・記事執筆・表紙制作・入稿まで、全てワンストップで承ります。
+                        Webメディア全般のライティングを承ります。マーケティング・不動産・金融をメインにしつつも、あらゆるジャンルのライティングが可能です。
                     </p>
+                </div>
+                <div class="service-image">
+                    <img src="./images/dummy.png" alt="Webメディアの記事ライティング">
                 </div>
             </div>
 
             <!-- サービス項目04 -->
-            <div class="service-item service-right">
-                <div class="service-image">
-                    <img src="./images/pen-writing.png" alt="法人向け教育事業">
-                </div>
+            <div class="service-item">
                 <div class="service-content">
                     <div class="service-title-row">
-                    <div class="service-number">04</div>
-                    <h3 class="service-name">法人向け教育事業</h3>
+                        <div class="service-number">04</div>
+                        <h3 class="service-name">Webメディアの記事ライティング</h3>
                     </div>
                     <p class="service-description">
-                        法人向けに「ライティング講座」を実施しております。受注率を上げる営業メールの書き方、分かりやすい資料の作成方法など、ライティング・編集についての講座を開催できます。
+                        Webメディア全般のライティングを承ります。マーケティング・不動産・金融をメインにしつつも、あらゆるジャンルのライティングが可能です。
                     </p>
+                </div>
+                <div class="service-image">
+                    <img src="./images/dummy.png" alt="Webメディアの記事ライティング">
                 </div>
             </div>
 
             <!-- サービス項目05 -->
-            <div class="service-item service-left">
-                <div class="service-image">
-                    <img src="./images/pen-writing.png" alt="オンラインコミュニティ運営">
-                </div>
+            <div class="service-item">
                 <div class="service-content">
                     <div class="service-title-row">
-                    <div class="service-number">05</div>
-                    <h3 class="service-name">オンラインコミュニティ運営</h3>
+                        <div class="service-number">05</div>
+                        <h3 class="service-name">Webメディアの記事ライティング</h3>
                     </div>
                     <p class="service-description">
-                        オンラインコミュニティ「Webライターラボ」を運営しています。メンバー数はおよそ1,500名（2025年5月時点）。ライター向けのコミュニティでは日本最大規模です。伝えられる仲間を増やすサポートも可能です。
+                        Webメディア全般のライティングを承ります。マーケティング・不動産・金融をメインにしつつも、あらゆるジャンルのライティングが可能です。
                     </p>
                 </div>
+                <div class="service-image">
+                    <img src="./images/dummy.png" alt="Webメディアの記事ライティング">
+                </div>
             </div>
+
         </div>
     </section>
 
-    <section id="works">
-        <div class="works-container">
-            <div class="works-title section-image-title">
-                <img src="./Designimage/04-works-title.png" alt="WORKS 実績">
-            </div>
-            
-            <div class="works-category-header">
-                <img src="./Designimage/04-works-icon.jpg" alt="書籍アイコン" class="works-icon">
-                <div class="works-title-block">
-                    <h3 class="works-category-title">著書</h3>
-<!-- 
-                    <div class="works-wave">
-                        <svg viewBox="0 0 300 24" width="100%" height="24" preserveAspectRatio="none">
-                          <path d="M0,12 Q12.5,24 25,12 T50,12 T75,12 T100,12 T125,12 T150,12 T175,12 T200,12 T225,12 T250,12 T275,12 T300,12" fill="none" stroke="#8ed6f7" stroke-width="8" />
-                        </svg>
+    <section id="talks">
+        <div class="talks-container">
+            <h2 class="h2title">
+                <span class="subtitle">登壇・出版</span>
+                <span class="titlemain">Talks & Publications</span>
+            </h2>
+            <!-- 著書 -->
+            <div class="mybook-content">
+                <h3 class="h3title">著　書</h3>
+                <div class="mybook-item">
+                    <div class="mybook-book-container">
+                        <img src="./Designimage/05-works-work01.jpg" alt="ライターとして生きていく" class="mybook-book-image">
                     </div>
-                     -->
-                </div>
-            </div>
-            
-            <div class="works-content">
-                <div class="works-item">
-                    <div class="works-book-container">
-                        <img src="./Designimage/05-works-aseicon.jpg" alt="汗アイコン" class="works-ase-icon">
-                        <img src="./Designimage/05-works-work01.jpg" alt="ライターとして生きていく" class="works-book-image">
-                    </div>
-                    <div class="works-book-info">
-                        <h4 class="works-book-title">『書くことを仕事にして自分らしく稼ぐ13の方法 ライターとして生きていく』</h4>
-                        <p class="works-book-details">
+                    <div class="mybook-book-info">
+                        <h4 class="mybook-book-title">『書くことを仕事にして自分らしく稼ぐ13の方法 ライターとして生きていく』</h4>
+                        <p class="mybook-book-details">
                             出版社：KADOKAWA<br>
                             発売日：2025年02月26日
                         </p>
-                        <a href="#" class="works-detail-link">詳細を見る →</a>
+                        <a href="#" class="linkbtn">詳細を見る &gt;</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="works-content">
-                <div class="works-item">
-                    <div class="works-book-container">
-                        <img src="./Designimage/05-works-aseicon.jpg" alt="汗アイコン" class="works-ase-icon">
-                        <img src="./Designimage/05-works-work01.jpg" alt="Webライター フリーランス入門講座" class="works-book-image">
+                <div class="mybook-item">
+                    <div class="mybook-book-container">
+                        <img src="./Designimage/05-works-work01.jpg" alt="ライターとして生きていく" class="mybook-book-image">
                     </div>
-                    <div class="works-book-info">
-                        <h4 class="works-book-title">『経験ゼロから確実に稼げるようになる Webライター フリーランス入門講座』</h4>
-                        <p class="works-book-details">
-                            出版社：ソーテック社<br>
-                            発売日：2023年12月19日
+                    <div class="mybook-book-info">
+                        <h4 class="mybook-book-title">『書くことを仕事にして自分らしく稼ぐ13の方法 ライターとして生きていく』</h4>
+                        <p class="mybook-book-details">
+                            出版社：KADOKAWA<br>
+                            発売日：2025年02月26日
                         </p>
-                        <a href="#" class="works-detail-link">詳細を見る →</a>
+                        <a href="#" class="linkbtn">詳細を見る &gt;</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="media">
-        <div class="media-container">
-            <div class="media-header">
-                <div class="media-title-wrapper">
-                    <img src="./Designimage/06-media-icon.jpg" alt="メディアアイコン" class="media-icon">
-                    <div class="media-title-block">
-                        <h2 class="media-title">書籍・メディア掲載</h2>
-<!-- 
-                        <div class="media-wave">
-                            <svg viewBox="0 0 300 24" width="100%" height="24" preserveAspectRatio="none">
-                              <path d="M0,12 Q12.5,24 25,12 T50,12 T75,12 T100,12 T125,12 T150,12 T175,12 T200,12 T225,12 T250,12 T275,12 T300,12" fill="none" stroke="#8ed6f7" stroke-width="8" />
-                            </svg>
+            <!-- 書籍・メディア掲載 -->
+            <div class="media-container cardDesign">
+                <div class="cardDesign__shadow"></div>
+                <div class="media-divider">
+                    <h3 class="h3title">書籍・メディア掲載</h3>
+                    <div class="media-images">
+                        <div class="media-image-container">
+                            <img src="./images/daytra-icon.png" alt="デイトラロゴ" class="media-image">
                         </div>
-                         -->
-                    </div>
-                </div>
-            </div>
-            <div class="media-images">
-                <div class="media-image-container">
-                    <img src="./images/daytra-icon.png" alt="デイトラロゴ" class="media-image">
-                </div>
-                <div class="media-image-container">
-                    <img src="./images/daytra-icon.png" alt="デイトラロゴ" class="media-image">
-                </div>
-                <div class="media-image-container">
-                    <img src="./images/daytra-icon.png" alt="デイトラロゴ" class="media-image">
-                </div>
-            </div>
-            <div class="media-content">
-                <ul class="media-list">
-                    <li class="media-item"><a href="#" target="_blank" class="media-link">『未経験でも、はじめの一歩が踏み出せる!Web系フリーランス働き方超大全』（著者：デイトラ）</a></li>
-                    <li class="media-item"><a href="#" target="_blank" class="media-link">再現性あるスキルだけ教える"超現実主義"なWebライターラボ（新R25インタビュー）</a></li>
-                    <li class="media-item"><a href="#" target="_blank" class="media-link">LPOはライターの市場価値を上げるのにおすすめのスキル（Ptengineインタビュー）</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="speaking">
-        <div class="speaking-container">
-            <div class="speaking-header">
-                <div class="speaking-title-wrapper">
-                    <img src="./Designimage/07-toudan-icon.jpg" alt="講演・登壇アイコン" class="speaking-icon">
-                    <div class="speaking-title-block">
-                        <h2 class="speaking-title">講演・登壇</h2>
-<!-- 
-                        <div class="speaking-wave">
-                            <svg viewBox="0 0 300 24" width="100%" height="24" preserveAspectRatio="none">
-                              <path d="M0,12 Q12.5,24 25,12 T50,12 T75,12 T100,12 T125,12 T150,12 T175,12 T200,12 T225,12 T250,12 T275,12 T300,12" fill="none" stroke="#8ed6f7" stroke-width="8" />
-                            </svg>
+                        <div class="media-image-container">
+                            <img src="./images/daytra-icon.png" alt="デイトラロゴ" class="media-image">
                         </div>
-                         -->
+                        <div class="media-image-container">
+                            <img src="./images/daytra-icon.png" alt="デイトラロゴ" class="media-image">
+                        </div>
                     </div>
+                    <ul class="media-list">
+                        <li class="media-item"><a href="#" target="_blank"
+                                class="media-link">『未経験でも、はじめの一歩が踏み出せる!Web系フリーランス働き方超大全』（著者：デイトラ）</a></li>
+                        <li class="media-item"><a href="#" target="_blank"
+                                class="media-link">再現性あるスキルだけ教える"超現実主義"なWebライターラボ（新R25インタビュー）</a></li>
+                        <li class="media-item"><a href="#" target="_blank"
+                                class="media-link">LPOはライターの市場価値を上げるのにおすすめのスキル（Ptengineインタビュー）</a></li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="speaking-content">
-                <div class="speaking-image-section">
-                    <img src="./Designimage/07-toudan-image03.png" alt="講演・登壇画像1" class="speaking-main-image">
-                </div>
-                <div class="speaking-bubble-section">
-                    <div class="speaking-bubble">
-                        <h3 class="bubble-subtitle">対談</h3>
-                        <p class="bubble-title">「2024年のWebライター業界とコミュニティが目指すもの」</p>
-                        <p class="bubble-organizer">（ライター研究所）</p>
+            <!-- 講演/登壇 -->
+            <div class="speaking-container">
+                <h3 class="h3title">講演・登壇</h3>
+
+                <div class="speaking-content">
+                    <div class="speaking-card">
+                        <h4 class="speaking-title">対談</h4>
+                        <img src="./Designimage/07-toudan-image03.png" alt="講演・登壇画像1" class="speaking-main-image">
+                        <p>「2024年のWebライター業界と
+                            コミュニティが目指すもの」
+                            （ライター研究所）</p>
                     </div>
-                </div>
-            </div>
-            <div class="speaking-content">
-                <div class="speaking-bubble-section">
-                    <div class="speaking-bubble">
-                        <h3 class="bubble-subtitle">セミナー</h3>
-                        <p class="bubble-title">「稼げるWebライターへ！<br>文字単価を倍にする方法とは？」</p>
-                        <p class="bubble-organizer">（クラウドワークス）</p>
+
+                    <div class="speaking-card">
+                        <h4 class="speaking-title">セミナー</h4>
+                        <img src="./Designimage/07-toudan-image03.png" alt="講演・登壇画像1" class="speaking-main-image">
+                        <p>「稼げるWebライターへ！
+                            文字単価を倍にする方法とは？」
+                            （クラウドワークス）</p>
                     </div>
-                </div>
-                <div class="speaking-image-section">
-                    <img src="./Designimage/07-toudan-image02.png" alt="講演・登壇画像2" class="speaking-main-image">
-                </div>
-            </div>
-            <div class="speaking-content">
-                <div class="speaking-image-section">
-                    <img src="./Designimage/07-toudan-image02.png" alt="講演・登壇画像3" class="speaking-main-image">
-                </div>
-                <div class="speaking-bubble-section">
-                    <div class="speaking-bubble">
-                        <h3 class="bubble-subtitle">サンプルタイトル3</h3>
-                        <p class="bubble-title">サンプルテキスト3がここに入ります。内容は後ほど差し替えてください。</p>
-                        <p class="bubble-organizer">（サンプル主催3）</p>
+
+                    <div class="speaking-card">
+                        <h4 class="speaking-title">イベント</h4>
+                        <img src="./Designimage/07-toudan-image03.png" alt="講演・登壇画像1" class="speaking-main-image">
+                        <p>「ここだけの話！」ライターがライティング以外で稼ぐための34の秘訣（CORECOLOR）</p>
                     </div>
-                </div>
-            </div>
-            <div class="speaking-content">
-                <div class="speaking-bubble-section">
-                    <div class="speaking-bubble">
-                        <h3 class="bubble-subtitle">サンプルタイトル4</h3>
-                        <p class="bubble-title">サンプルテキスト4がここに入ります。内容は後ほど差し替えてください。</p>
-                        <p class="bubble-organizer">（サンプル主催4）</p>
+                    <div class="speaking-card">
+                        <h4 class="speaking-title">対談</h4>
+                        <img src="./Designimage/07-toudan-image03.png" alt="講演・登壇画像1" class="speaking-main-image">
+                        <p>『選ばれるフリーランスになるためには？』（ランサーズ）</p>
                     </div>
-                </div>
-                <div class="speaking-image-section">
-                    <img src="./Designimage/07-toudan-image05.jpg" alt="講演・登壇画像4" class="speaking-main-image">
-                </div>
-            </div>
-            <div class="speaking-content">
-                <div class="speaking-image-section">
-                    <img src="./Designimage/07-toudan-image04.jpg" alt="講演・登壇画像5" class="speaking-main-image">
-                </div>
-                <div class="speaking-bubble-section">
-                    <div class="speaking-bubble">
-                        <h3 class="bubble-subtitle">サンプルタイトル5</h3>
-                        <p class="bubble-title">サンプルテキスト5がここに入ります。内容は後ほど差し替えてください。</p>
-                        <p class="bubble-organizer">（サンプル主催5）</p>
+
+                    <div class="speaking-card">
+                        <h4 class="speaking-title">セミナー</h4>
+                        <img src="./Designimage/07-toudan-image03.png" alt="講演・登壇画像1" class="speaking-main-image">
+                        <p>プロのライターが教える
+                            「伝わる文章」の書き方　etc...
+                            （KADOKAWA）</p>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="interview-famous">
-        <div class="interview-header">
-            <div class="interview-title-wrapper">
-                <img src="./Designimage/07-toudan-icon.jpg" alt="著名人インタビューアイコン" class="interview-icon">
-                <div class="interview-title-block">
-                    <h2 class="interview-title">著名人インタビュー（マンションプラス）</h2>
-<!-- 
-                    <div class="interview-wave">
-                        <svg viewBox="0 0 300 24" width="100%" height="24" preserveAspectRatio="none">
-                          <path d="M0,12 Q12.5,24 25,12 T50,12 T75,12 T100,12 T125,12 T150,12 T175,12 T200,12 T225,12 T250,12 T275,12 T300,12" fill="none" stroke="#8ed6f7" stroke-width="8" />
-                        </svg>
-                    </div>
-                     -->
-                </div>
-            </div>
-        </div>
-        <div class="interview-content">
-            <div class="celeb-flex">
-                <div class="celeb-row">
-                    <div class="celeb-item">
-                        <img src="./Designimage/08-tyomeijin-image.png" alt="著名人1" class="celeb-image">
-                        <p class="celeb-caption">佐久間宣行さんの仕事場を初公開！ヒットコンテンツを生み出す部屋とは？</p>
-                    </div>
-                    <div class="celeb-item">
-                        <img src="./Designimage/08-tyomeijin-image.png" alt="著名人2" class="celeb-image">
-                        <p class="celeb-caption">推しは寝室！ 村田絵理奈の「家族の健康を守る」マンションとは？</p>
-                    </div>
-                    <div class="celeb-item">
-                        <img src="./Designimage/08-tyomeijin-image.png" alt="著名人3" class="celeb-image">
-                        <p class="celeb-caption">「新居探しに１年かけた」さらば青春の光 森田さんが語る家選びのポイント</p>
-                    </div>
-                </div>
-                <div class="celeb-row">
-                    <div class="celeb-item">
-                        <img src="./Designimage/08-tyomeijin-image.png" alt="著名人4" class="celeb-image">
-                        <p class="celeb-caption">知性派遊び人の街!? 麻布競馬場×博報堂ケトル嶋浩一郎が語る「赤坂」</p>
-                    </div>
-                    <div class="celeb-item">
-                        <img src="./Designimage/08-tyomeijin-image.png" alt="著名人5" class="celeb-image">
-                        <p class="celeb-caption">好きな場所はキッチン。健康オタクのソニン流「美と健康」を守る部屋づくりとは？</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="interview-company">
-        <div class="interview-header">
-            <div class="interview-title-wrapper">
-                <img src="./Designimage/07-toudan-icon.jpg" alt="企業インタビューアイコン" class="interview-icon">
-                <div class="interview-title-block">
-                    <h2 class="interview-title">企業インタビュー（ダイヤモンドCS）</h2>
-<!-- 
-                    <div class="interview-wave">
-                        <svg viewBox="0 0 300 24" width="100%" height="24" preserveAspectRatio="none">
-                          <path d="M0,12 Q12.5,24 25,12 T50,12 T75,12 T100,12 T125,12 T150,12 T175,12 T200,12 T225,12 T250,12 T275,12 T300,12" fill="none" stroke="#8ed6f7" stroke-width="8" />
-                        </svg>
-                    </div>
-                     -->
-                </div>
-            </div>
-        </div>
-        <div class="interview-company-box">
-          <div class="interview-company-icon-area">
-            <span class="interview-company-icon-bg">
-              <img src="./Designimage/kigyointerview-img01.jpg" alt="ペンを持つ手アイコン" class="interview-company-icon-img">
-            </span>
-          </div>
-          <div class="interview-company-text-area">
-            <ul class="interview-company-list">
-              <li><a href="#" class="interview-company-link">年間の視聴者数1000万人突破！ ユニクロのライブコマースが好調な理由</a></li>
-              <li><a href="#" class="interview-company-link">ワールド、わずか2年でストラスブルゴを再生させた手法と要因とは　今後の攻めの戦略を明かす</a></li>
-              <li><a href="#" class="interview-company-link">フードホールとコンセプト店舗を展開、ぐるなびが実店舗ビジネスを拡げる理由とは</a></li>
-            </ul>
-          </div>
-        </div>
-    </section>
-    <section id="interview-personal">
-        <div class="interview-header">
-            <div class="interview-title-wrapper">
-                <img src="./Designimage/07-toudan-icon.jpg" alt="自分物インタビューアイコン" class="interview-icon">
-                <div class="interview-title-block">
-                    <h2 class="interview-title">自分物インタビュー</h2>
-<!-- 
-                    <div class="interview-wave">
-                        <svg viewBox="0 0 300 24" width="100%" height="24" preserveAspectRatio="none">
-                          <path d="M0,12 Q12.5,24 25,12 T50,12 T75,12 T100,12 T125,12 T150,12 T175,12 T200,12 T225,12 T250,12 T275,12 T300,12" fill="none" stroke="#8ed6f7" stroke-width="8" />
-                        </svg>
-                    </div>
-                     -->
-                </div>
-            </div>
-        </div>
-        <div class="interview-content">
-          <div class="personal-interview-card">
-            <div class="personal-interview-text">
-              <div class="personal-interview-title">日本ランク2位でも年収は20万円…元プロ格闘家が告白する「キックボクシング業界」の厳しすぎる…</div>
-              <div class="personal-interview-lead">YouTubeなどで格闘技系のコンテンツはとても人気がある。腕自慢の素人が「夢をつかむために、プロになりたい」と宣言するの</div>
-              <div class="personal-interview-url">president.jp</div>
-            </div>
-            <div class="personal-interview-image">
-              <img src="./Designimage/jinbutsuinterview-img01.jpg" alt="インタビュー画像1">
-            </div>
-          </div>
-          <div class="personal-interview-card">
-            <div class="personal-interview-text">
-              <div class="personal-interview-title">タイトル例2：地方から世界へ挑戦した若手起業家のリアルストーリー</div>
-              <div class="personal-interview-lead">地方都市で生まれ育った若者が、どのようにして世界市場に挑戦するに至ったのか。その裏側に迫る。</div>
-              <div class="personal-interview-url">example.com</div>
-            </div>
-            <div class="personal-interview-image">
-              <img src="./Designimage/jinbutsuinterview-img01.jpg" alt="インタビュー画像1">
+    <!-- 実績 -->
+    <section id="works">
+        <div class="works-container">
+            <h2 class="h2title">
+                <span class="subtitle">実績</span>
+                <span class="titlemain">WORKS</span>
+            </h2>
 
-            </div>
-          </div>
-          <div class="personal-interview-card">
-            <div class="personal-interview-text">
-              <div class="personal-interview-title">タイトル例3：未経験からプロ作家へ転身した女性の10年</div>
-              <div class="personal-interview-lead">全くの未経験から作家デビューし、10年でベストセラー作家となった女性の歩みを追う。</div>
-              <div class="personal-interview-url">writerstory.jp</div>
-            </div>
-            <div class="personal-interview-image">
-              <img src="./Designimage/jinbutsuinterview-img01.jpg" alt="インタビュー画像1">
+            <!-- 著名人インタビュー -->
+            <div id="interview-famous">
+                <h3 class="h3title">
+                    著名人インタビュー<br><span>（マンションプラス）</span>
+                </h3>
+                <div class="interview-content">
+                    <div class="swiper interview-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- インタビューアイコン左 -->
+                            <div class="swiper-slide">
+                                <div class="interview-block-left">
+                                    <div class="interview-image">
+                                        <img src="./Designimage/08-tyomeijin-image.png" alt="">
+                                    </div>
+                                    <div class="interview-text-left">
+                                        <p>
+                                            佐久間宣行さんの仕事場を初公開！<br>
+                                            ヒットコンテンツを生み出す部屋とは？
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-            </div>
-          </div>
-        </div>
-    </section>
-    <section id="book-writing">
-        <div class="interview-header">
-            <div class="interview-title-wrapper">
-                <img src="./Designimage/07-toudan-icon.jpg" alt="書籍のブックライティングや編集協力アイコン" class="interview-icon">
-                <div class="interview-title-block">
-                    <h2 class="interview-title">書籍のブックライティングや編集協力</h2>
-<!-- 
-                    <div class="interview-wave">
-                        <svg viewBox="0 0 300 24" width="100%" height="24" preserveAspectRatio="none">
-                          <path d="M0,12 Q12.5,24 25,12 T50,12 T75,12 T100,12 T125,12 T150,12 T175,12 T200,12 T225,12 T250,12 T275,12 T300,12" fill="none" stroke="#8ed6f7" stroke-width="8" />
-                        </svg>
+                            <!-- インタビューアイコン右 -->
+                            <div class="swiper-slide">
+                                <div class="interview-block-right">
+                                    <div class="interview-image">
+                                        <img src="./Designimage/08-tyomeijin-image.png" alt="">
+                                    </div>
+                                    <div class="interview-text-right">
+                                        推しは寝室！　枡田絵理奈の「家族の健康を守る」マンションとは？
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- インタビューアイコン左 -->
+                            <div class="swiper-slide">
+                                <div class="interview-block-left">
+                                    <div class="interview-image">
+                                        <img src="./Designimage/08-tyomeijin-image.png" alt="">
+                                    </div>
+                                    <div class="interview-text-left">
+                                        <p>
+                                            佐久間宣行さんの仕事場を初公開！<br>
+                                            ヒットコンテンツを生み出す部屋とは？
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- インタビューアイコン右 -->
+                            <div class="swiper-slide">
+                                <div class="interview-block-right">
+                                    <div class="interview-image">
+                                        <img src="./Designimage/08-tyomeijin-image.png" alt="">
+                                    </div>
+                                    <div class="interview-text-right">
+                                        推しは寝室！　枡田絵理奈の「家族の健康を守る」マンションとは？
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- インタビューアイコン左 -->
+                            <div class="swiper-slide">
+                                <div class="interview-block-left">
+                                    <div class="interview-image">
+                                        <img src="./Designimage/08-tyomeijin-image.png" alt="">
+                                    </div>
+                                    <div class="interview-text-left">
+                                        <p>
+                                            佐久間宣行さんの仕事場を初公開！<br>
+                                            ヒットコンテンツを生み出す部屋とは？
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- インタビューアイコン右 -->
+                            <div class="swiper-slide">
+                                <div class="interview-block-right">
+                                    <div class="interview-image">
+                                        <img src="./Designimage/08-tyomeijin-image.png" alt="">
+                                    </div>
+                                    <div class="interview-text-right">
+                                        推しは寝室！　枡田絵理奈の「家族の健康を守る」マンションとは？
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                     -->
+                </div>
+            </div>
+
+            <!-- 企業インタビュー -->
+            <div id="interview-company" class="cardDesign">
+                <div class="cardDesign__shadow"></div>
+                <h3 class="h3title">
+                    企業インタビュー<br><span>（ダイヤモンドCS）</span>
+                </h3>
+                <div class="interview-company-box">
+                    <div class="interview-company-text-area">
+                        <ul class="interview-company-list">
+                            <li><a href="#" class="interview-company-link">年間の視聴者数1000万人突破！ ユニクロのライブコマースが好調な理由</a></li>
+                            <li><a href="#"
+                                    class="interview-company-link">ワールド、わずか2年でストラスブルゴを再生させた手法と要因とは　今後の攻めの戦略を明かす</a></li>
+                            <li><a href="#" class="interview-company-link">フードホールとコンセプト店舗を展開、ぐるなびが実店舗ビジネスを拡げる理由とは</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 人物インタビュー -->
+            <div id="interview-personal">
+                <h3 class="h3title">
+                    人物インタビュー
+                </h3>
+                <div class="interview-personal-container">
+                    <!-- インタビューブロック -->
+                    <div class="interview-personal-block">
+                        <div class="interview-personal-text">
+                            <h4 class="interview-personal-title">
+                                日本ランク2位でも年収は20万円…元プロ格闘家が告白する「キックボクシング業界」の厳しすぎる
+                            </h4>
+                            <p class="interview-personal-subtitle">
+                                YouTubeなどで格闘技系のコンテンツはとても人気がある。腕自慢の素人が「夢をつかむために、プロになりたい」と宣言するの
+                            </p>
+                            <p class="interview-personal-link">
+                                <a href="http://www.president.jp/" target="_blank">president.jp</a>
+                            </p>
+                        </div>
+                        <div class="interview-personal-image">
+                            <img src="./Designimage/jinbutsuinterview-img01.jpg" alt="インタビュー画像1">
+                        </div>
+                    </div>
+
+                    <!-- インタビューブロック -->
+                    <div class="interview-personal-block">
+                        <div class="interview-personal-text">
+                            <h4 class="interview-personal-title">
+                                日本ランク2位でも年収は20万円…
+                            </h4>
+                            <p class="interview-personal-subtitle">
+                                YouTubeなどで格闘技系のコンテンツはとても人気
+                            </p>
+                            <p class="interview-personal-link">
+                                <a href="http://www.president.jp/" target="_blank">president.jp</a>
+                            </p>
+                        </div>
+                        <div class="interview-personal-image">
+                            <img src="./Designimage/jinbutsuinterview-img01.jpg" alt="インタビュー画像1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 書籍のブックライティングや編集協力 -->
+            <div id="book-writing">
+                <h3 class="h3title">書籍のブックライティングや編集協力</h3>
+                <!-- 本のスライド -->
+                <div class="bookshelf-container">
+                    <div class="swiper bookshelf-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="bookwriting-item">
+                                    <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png"
+                                            alt="書籍画像" class="bookwriting-image"></a>
+                                    <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bookwriting-item">
+                                    <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png"
+                                            alt="書籍画像" class="bookwriting-image"></a>
+                                    <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bookwriting-item">
+                                    <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png"
+                                            alt="書籍画像" class="bookwriting-image"></a>
+                                    <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bookwriting-item">
+                                    <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png"
+                                            alt="書籍画像" class="bookwriting-image"></a>
+                                    <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bookwriting-item">
+                                    <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png"
+                                            alt="書籍画像" class="bookwriting-image"></a>
+                                    <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bookwriting-item">
+                                    <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png"
+                                            alt="書籍画像" class="bookwriting-image"></a>
+                                    <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 矢印 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Webメディアの執筆・企画・構成 -->
+            <div id="web-writing">
+                <h3 class="h3title">Webメディアの執筆・企画・構成</h3>
+                <div class="interview-company-text-area">
+                    <ul class="interview-company-list">
+                        <li><a href="#" class="interview-company-link"></a>幻冬舎ゴールドオンラインさま 連載担当</a></li>
+                        <li><a href="#" class="interview-company-link">金融メディア『HEDGE GUIDE』さま　記事執筆</a></li>
+                        <li><a href="#" class="interview-company-link">相続会議（朝日新聞社）さま　記事執筆</a></li>
+                    </ul>
+                    <p class="web-writing-text">他、合計4,300記事以上を執筆</p>
                 </div>
             </div>
         </div>
-        <div class="interview-content">
-          <div class="bookwriting-grid">
-            <div class="bookwriting-item">
-              <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png" alt="書籍画像" class="bookwriting-image"></a>
-              <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
-            </div>
-            <div class="bookwriting-item">
-              <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png" alt="書籍画像" class="bookwriting-image"></a>
-              <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
-            </div>
-            <div class="bookwriting-item">
-              <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png" alt="書籍画像" class="bookwriting-image"></a>
-              <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
-            </div>
-            <div class="bookwriting-item">
-              <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png" alt="書籍画像" class="bookwriting-image"></a>
-              <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
-            </div>
-            <div class="bookwriting-item">
-              <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png" alt="書籍画像" class="bookwriting-image"></a>
-              <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
-            </div>
-            <div class="bookwriting-item">
-              <a href="#" class="bookwriting-image-link"><img src="./images/bookwriting-image.png" alt="書籍画像" class="bookwriting-image"></a>
-              <a href="#" class="bookwriting-title">収入の9割はマネースクリプトで決まる（メンタリストDaiGo / KADOKAWA）</a>
-            </div>
-          </div>
-        </div>
     </section>
-    <section id="web-writing">
-        <div class="interview-header">
-            <div class="interview-title-wrapper">
-                <img src="./Designimage/07-toudan-icon.jpg" alt="Webメディアの執筆・企画・構成アイコン" class="interview-icon">
-                <div class="interview-title-block">
-                    <h2 class="interview-title">Webメディアの執筆・企画・構成</h2>
-                </div>
-            </div>
-            <div class="interview-company-box">
-              <div class="interview-company-icon-area">
-                <span class="interview-company-icon-bg">
-                  <img src="./Designimage/web-writing-img01.jpg" alt="ペンを持つ手アイコン" class="interview-company-icon-img">
-                </span>
-              </div>
-              <div class="interview-company-text-area">
-                <ul class="interview-company-list">
-                  <li><a href="#" class="interview-company-link"></a>幻冬舎ゴールドオンラインさま 連載担当</a></li>
-                  <li><a href="#" class="interview-company-link">金融メディア『HEDGE GUIDE』さま　記事執筆</a></li>
-                  <li><a href="#" class="interview-company-link">相続会議（朝日新聞社）さま　記事執筆</a></li>
-                </ul>
-                <p class="web-writing-text">他、合計4,300記事以上を執筆</p>
-              </div>
-            </div>
-        </div>
-        <div class="interview-content"></div>
-    </section>
+
+    <!-- ご挨拶 -->
     <section id="message">
-        <div class="message-container">
-            <div class="message-title section-image-title">
-                <img src="./Designimage/09-message-title.png" alt="MESSAGE ご挨拶">
-            </div>
-            <div class="message-flex">
-                <div class="message-photo-area">
-                    <img src="./Designimage/09-message-icon.jpg" alt="中村さんアイコン" class="message-photo">
+        <div class="message-container cardDesign">
+            <div class="cardDesign__shadow"></div>
+            <div class="message-block">
+                <h2 class="h2title">
+                    <span class="subtitle">ご挨拶</span>
+                    <span class="titlemain">Message</span>
+                </h2>
+
+                <div class="message-flex">
+                    <div class="message-balloon-area">
+                        <div class="message-balloon">
+                            弊社のサイトをご覧いただき、誠にありがとうございます。代表取締役の中村昌弘です。<br><br>
+                            私は2016年にライターとして独立してから、数多くのお客様とお仕事させて頂きました。独立当初は、SEOメディアへの記事執筆がメインでしたが、ありがたいことに段々と仕事の幅が広がってきました。<br><br>
+                            LPやメルマガをはじめとするセールスライティング、Webメディアのコンサルティング、法人向けの文章講義、そして書籍の執筆・編集業務。そのすべてに「文章」が関わっており、その文章を「取材」「執筆」「編集」することが私の主な仕事です。<br><br>
+                            私一人ではなく、数多くのクリエイターと力を合わせ、ご満足いただく成果物をつくりあげていきます。<br><br>
+                            執筆や編集という分野はまだまだ無限の可能性を秘めています。時代の変化を楽しみつつ、そして時代に合わせた、その時々に合った執筆・編集をしていき、お客様にご満足頂く。その気持ちを大切に一歩一歩前へ進んでいきます。
+                        </div>
+
+                    </div>
+
                     <div class="message-profile">
-                        <div class="message-profile-name">代表取締役 中村昌弘</div>
-                        <div class="message-profile-text">1985年生まれ埼玉県出身。立教大学を卒業後、マンションディベロッパーへ入社。その後は人事コンサル系の会社へ転職し、2016年2月に独立。独立と同時にWebライターをはじめる。</div>
+                        <div class="box">
+                            <div class="message-profile-name">代表取締役 中村昌弘</div>
+                            <div class="message-profile-text">
+                                1985年生まれ埼玉県出身。立教大学を卒業後、マンションディベロッパーへ入社。その後は人事コンサル系の会社へ転職し、2016年2月に独立。独立と同時にWebライターをはじめる。
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="./Designimage/09-message-icon.jpg" alt="中村さんアイコン" class="message-photo">
+                        </div>
                     </div>
-                </div>
-                <div class="message-balloon-area">
-                    <div class="message-balloon">
-                        弊社のサイトをご覧いただき、誠にありがとうございます。代表取締役の中村昌弘です。<br><br>
-                        私は2016年にライターとして独立してから、数多くのお客様とお仕事させて頂きました。独立当初は、SEOメディアへの記事執筆がメインでしたが、ありがたいことに段々と仕事の幅が広がってきました。<br><br>
-                        LPやメルマガをはじめとするセールスライティング、Webメディアのコンサルティング、法人向けの文章講義、そして書籍の執筆・編集業務。そのすべてに「文章」が関わっており、その文章を「取材」「執筆」「編集」することが私の主な仕事です。<br><br>
-                        私一人ではなく、数多くのクリエイターと力を合わせ、ご満足いただく成果物をつくりあげていきます。<br><br>
-                        執筆や編集という分野はまだまだ無限の可能性を秘めています。時代の変化を楽しみつつ、そして時代に合わせた、その時々に合った執筆・編集をしていき、お客様にご満足頂く。その気持ちを大切に一歩一歩前へ進んでいきます。
-                    </div>
-                    <div class="message-decoration">
-<!-- 
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="68" cy="18" r="8" fill="#b3e6ff"/>
-                            <circle cx="60" cy="38" r="4" fill="#b3e6ff"/>
-                            <circle cx="76" cy="36" r="3" fill="#b3e6ff"/>
-                        </svg>
-                         -->
+                    <div class="message-links">
+                        <div class="links-portfolio">
+                            <a href="#" class="linkbtn">中村のポートフォリオ &gt;</a>
+                        </div>
+                        <div class="links-media">
+                            <a href="#" class="linkbtn">運営しているメディア &gt;</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- 会社概要 -->
     <section id="company">
         <div class="company-container">
-            <!-- 角の装飾 -->
-            <div class="company-corner-decoration top-left">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polyline points="10,70 10,10 70,10" stroke="#7ed6fb" stroke-width="8" fill="none" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="company-corner-decoration bottom-right">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polyline points="70,10 70,70 10,70" stroke="#7ed6fb" stroke-width="8" fill="none" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="company-title section-image-title">
-                <img src="./Designimage/10-company-title.png" alt="COMPANY 会社概要">
-            </div>
+            <h2 class="h2title">
+                <span class="subtitle">会社概要</span>
+                <span class="titlemain">company</span>
+            </h2>
             <div class="company-content">
                 <table class="company-table">
                     <tr>
@@ -601,52 +601,75 @@
             </div>
         </div>
     </section>
+
+    <!-- お問い合わせ -->
     <section id="contact">
         <div class="contact-container">
-            <div class="contact-title section-image-title">
-                <img src="./Designimage/11-contact-title.png" alt="CONTACT お問い合わせ">
-            </div>
+            <h2 class="h2title">
+                <span class="subtitle">お問い合わせ</span>
+                <span class="titlemain">contact</span>
+            </h2>
             <div class="contact-bgform">
-                <form class="contact-form">
-                    <div class="contact-form-notice">※「営業メールの送付」や「弊社に許可なくメールマガジンへ登録する行為」はご遠慮ください</div>
-                    <div class="contact-form-row">
-                        <div class="contact-form-col">
-                            <label for="contact-name1">Name <span class="contact-form-required">*</span></label>
-                            <input id="contact-name1" type="text">
-                        </div>
-                        <div class="contact-form-col">
-                            <label for="contact-name2">&nbsp;</label>
-                            <input id="contact-name2" type="text">
-                        </div>
+                <div class="cf_section">
+                    <div class="inner">
+                        <div class="item detail"><span class="description">お名前</span><span
+                                class="required_label">必須</span></div>
+                        <div class="item value">[text* your-name autocomplete:name]</div>
                     </div>
-                    <div class="contact-form-group">
-                        <label for="contact-email">Email <span class="contact-form-required">*</span></label>
-                        <input id="contact-email" type="email">
+                    <div class="inner">
+                        <div class="item detail"><span class="description">電話番号</span><span
+                                class="required_label">必須</span></div>
+                        <div class="item value">[tel* your-tel autocomplete:tel]</div>
                     </div>
-                    <div class="contact-form-group message">
-                        <label for="contact-message">Comment or Message <span class="contact-form-required">*</span></label>
-                        <textarea id="contact-message"></textarea>
+                    <div class="inner">
+                        <div class="item detail"><span class="description">メールアドレス</span><span
+                                class="required_label">必須</span></div>
+                        <div class="item value">[email* your-email autocomplete:email]</div>
                     </div>
-                    <button type="submit">Submit</button>
-                </form>
+                    <div class="inner message">
+                        <div class="item detail"><span class="description">メッセージ</span></div>
+                        <div class="item value">[textarea* message]</div>
+                    </div>
+                    <div class="inner cf_privacy">
+                        ※「営業メールの送付」や「弊社に許可なくメールマガジンへ登録する行為」はご遠慮ください。<br>
+                        <a href="/privacy-policy/">プライバシーポリシー</a>に同意する
+                    </div>
+
+                    <div class="send_btn">[submit "入力内容の確認"]</div>
+                </div>
             </div>
         </div>
     </section>
     <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-top">
-          <img src="./Designimage/99-footer-logo.png" alt="なかむら編集室ロゴ" class="footer-logo">
-          <span class="footer-title">なかむら編集室</span>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <img src="./Designimage/99-footer-logo.png" alt="なかむら編集室ロゴ" class="footer-logo">
+                <span class="footer-title">なかむら編集室</span>
+            </div>
+            <div class="footer-bottom">
+                <nav class="footer-links">
+                    <a href="#" class="footer-link footer-link-underline">プライバシーポリシー</a>
+                    <a href="#" class="footer-link">利用規約</a>
+                    <a href="#" class="footer-link">特定商取引法に基づく表記の記載</a>
+                </nav>
+
+            </div>
+            <div class="footer-copyright">©株式会社なかむら編集室</div>
         </div>
-        <div class="footer-bottom">
-          <nav class="footer-links">
-            <a href="#" class="footer-link footer-link-underline">プライバシーポリシー</a>
-            <a href="#" class="footer-link">利用規約</a>
-            <a href="#" class="footer-link">特定商取引法に基づく表記の記載</a>
-          </nav>
-          <div class="footer-copyright">©株式会社なかむら編集室</div>
-        </div>
-      </div>
     </footer>
+
+    <!-- Gsapjs -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/header.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/book.js"></script>
+    <script src="js/interview-famous.js"></script>
 </body>
-</html> 
+
+</html>

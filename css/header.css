@@ -1,0 +1,79 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 60px;
+}
+
+/* メニューリスト */
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family: var(--eiji_font);
+}
+.menu-item:hover {
+    opacity: 0.5;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ヘッダースクロールスタイル */
+.header.is-scroll {
+    background-color: var(--white);
+    box-shadow:
+        inset -5px -5px 10px 0px #ffffff80,
+        inset 5px 5px 10px 0px #d0d0d04d,
+        -1px 5px 10px 0px #d0d0d04d;
+    width: 140px;
+    right: -6px;
+    top: 50%;
+    left: auto;
+    padding: 2rem;
+    border-radius: 30px 0 0 30px;
+}
+
+.header.is-scroll .menu-list {
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.header.is-scroll .menu {
+    height: auto;
+    padding: 0;
+    flex-direction: column-reverse;
+}
+
+.header.is-scroll .logo-text {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .header.is-scroll {
+        right: -130px;
+    }
+    .menu-list {
+        display: none;
+    }
+    .header.is-scroll .menu-list {
+        display: block;
+    }
+}
+
+/* 暗転演出 */
+.is-none {
+    display: none;
+}
