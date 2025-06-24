@@ -93,7 +93,7 @@ a {
 }
 .h2title::after {
     content: "";
-    background-image: url(/Designimage/marker.png);
+    background-image: url(../Designimage/marker.png);
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
