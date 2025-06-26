@@ -23,4 +23,35 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.bookshelf-container .swiper-button-prev',
     },
   });
+
+  // ★ ナビゲーションボタンが押された時だけ speed を変更
+  const nextBtn = document.querySelector('.bookshelf-container .swiper-button-next');
+  const prevBtn = document.querySelector('.bookshelf-container .swiper-button-prev');
+
+  const fastSpeed = 500;
+  const slowSpeed = 20000;
+
+  function moveNext() {
+    swiper.params.speed = fastSpeed;
+    swiper.slideNext();
+    resetSpeed();
+  }
+
+  function movePrev() {
+    swiper.params.speed = fastSpeed;
+    swiper.slidePrev();
+    resetSpeed();
+  }
+
+  function resetSpeed() {
+    // 少し待って元のスピードに戻す（自動再生用）
+    setTimeout(() => {
+      swiper.params.speed = slowSpeed;
+    }, fastSpeed + 100); // 少し余裕を持って
+  }
+
+  if (nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', moveNext);
+    prevBtn.addEventListener('click', movePrev);
+  }
 });

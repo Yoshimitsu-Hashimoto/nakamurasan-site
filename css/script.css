@@ -32,3 +32,24 @@
     height: auto;
     width: 100%;
 }
+
+/* ＝＝＝＝＝タイピングアニメーション＝＝＝＝＝ */
+/* タイピングアニメーション点滅 */
+.typing_animation::after {
+    content: "";
+    border-right: 2px solid var(--black);
+    margin-left: 5px;
+    animation: flashing 1s linear infinite;
+    opacity: 0;
+}
+
+@keyframes flashing {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

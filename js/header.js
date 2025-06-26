@@ -11,3 +11,11 @@ window.addEventListener('scroll', () => {
     header.classList.add('is-scroll');
   }
 });
+
+// メニュー開閉
+const menuButton = document.querySelector(".menu-button-sp");
+  const menu = document.querySelector(".menu");
+
+  menuButton.addEventListener("click", function () {
+    menu.classList.toggle("is-open");
+  });

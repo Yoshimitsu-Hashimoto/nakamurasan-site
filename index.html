@@ -20,12 +20,14 @@
 
 <body>
     <header class="header">
+        <button class="menu-button-sp">
+            <span>Menu</span>
+        </button>
         <nav class="menu">
             <div class="logo-section">
                 <div class="logo" style="align-items: flex-start;">
-                    <img src="./Designimage/99-footer-logo.png" alt="ロゴ" class="logo-img"
-                        style="height: 35px; width: 35px; min-width: 35px; object-fit: contain; margin-right: 8px; margin-top: 0;">
-                    <span class="logo-text" style="color: var(--black); margin-top: 2px;">なかむら編集室</span>
+                    <img src="./Designimage/99-footer-logo.png" alt="ロゴ" class="logo-img">
+                    <span class="logo-text">なかむら編集室</span>
                 </div>
             </div>
             <ul class="menu-list">
@@ -42,7 +44,8 @@
         <div class="hero-container">
 
             <div class="catchphrase-section">
-                <h1 class="catchphrase">編集の力で"伝える"を<br class="spbr">お手伝いします。</h1>
+                <h1 class="typing_animation"></h1>
+                <!-- <h1 class="catchphrase">編集の力で"伝える"を<br class="spbr">お手伝いします。</h1> -->
             </div>
         </div>
     </section>
@@ -55,26 +58,26 @@
             </h2>
             <div class="mission-content">
                 <p class="mission-text">
-                    今はコンテンツが溢れる時代。法人も個人も関係なく、<br>多くの人がたくさんの記事を書き、動画を投稿し、SNSを運用しています。
+                    今はコンテンツが溢れる時代。法人も個人も関係なく、<br class="pcbr">多くの人がたくさんの記事を書き、動画を投稿し、SNSを運用しています。
                 </p>
                 <p class="mission-text">
-                    一時期「現代人が1日に触れる情報量は江戸時代の１年分、平安時代の一生分」という投稿がSNSで話題になりました。
+                    一時期「現代人が1日に触れる情報量は江戸時代の１年分、平安時代の一生分」<br class="pcbr">という投稿がSNSで話題になりました。
                 </p>
                 <p class="mission-text">
-                    明確な根拠ないので真偽は不明ですが、頷く人も多いのではないでしょうか。それほど現代は情報に溢れているからです。
+                    明確な根拠ないので真偽は不明ですが、頷く人も多いのではないでしょうか。<br class="pcbr">それほど現代は情報に溢れているからです。
                 </p>
-                <p class="mission-emphasis">
-                    そんな時代において、自社、あるいは個人の「伝えたいこと」を「伝えたい人」に届けるのは非常に難しいと言えるでしょう。
+                <p class="mission-text">
+                    そんな時代において、自社、あるいは個人の<br class="pcbr">「伝えたいこと」を「伝えたい人」に届けるのは非常に難しいと言えるでしょう。
                 </p>
-                <p class="mission-emphasis">
-                    何か伝えたいことがあっても、果たしてそれをどの媒体でどのように伝えるのか。
+                <p class="mission-text">
+                    何か伝えたいことがあっても、果たしてそれをどの媒体でどのように伝えるのか。<br class="pcbr">
                     ブログがいいのかSNSがいいのか、あるいは音声や動画、メルマガの方がいいのか？
                 </p>
-                <p class="mission-emphasis">
-                    一昔前はメールやチラシなど、選択肢が少なかったからこそ迷いは生じませんでした。
+                <p class="mission-text">
+                    一昔前はメールやチラシなど、選択肢が少なかったからこそ迷いは生じませんでした。<br class="pcbr">
                     しかし、コンテンツが溢れる現代においては、これらの判断が非常に難しいのです。
                 </p>
-                <p class="mission-emphasis">
+                <p class="mission-text">
                     そんな状況だからこそ、弊社にお手伝いさせてください。
                 </p>
                 <p class="mission-emphasis">
@@ -368,18 +371,12 @@
                                 </div>
                             </div>
 
-                            <!-- インタビューアイコン右 -->
-                            <div class="swiper-slide">
-                                <div class="interview-block-right">
-                                    <div class="interview-image">
-                                        <img src="./Designimage/08-tyomeijin-image.png" alt="">
-                                    </div>
-                                    <div class="interview-text-right">
-                                        推しは寝室！　枡田絵理奈の「家族の健康を守る」マンションとは？
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                    </div>
+                    <!-- 矢印 -->
+                    <div class="interview-pagination">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -524,42 +521,46 @@
     <section id="message">
         <div class="message-container cardDesign">
             <div class="cardDesign__shadow"></div>
-            <div class="message-block">
+            <div class="message-wrapper">
                 <h2 class="h2title">
                     <span class="subtitle">ご挨拶</span>
                     <span class="titlemain">Message</span>
                 </h2>
-
-                <div class="message-flex">
-                    <div class="message-balloon-area">
-                        <div class="message-balloon">
-                            弊社のサイトをご覧いただき、誠にありがとうございます。代表取締役の中村昌弘です。<br><br>
-                            私は2016年にライターとして独立してから、数多くのお客様とお仕事させて頂きました。独立当初は、SEOメディアへの記事執筆がメインでしたが、ありがたいことに段々と仕事の幅が広がってきました。<br><br>
-                            LPやメルマガをはじめとするセールスライティング、Webメディアのコンサルティング、法人向けの文章講義、そして書籍の執筆・編集業務。そのすべてに「文章」が関わっており、その文章を「取材」「執筆」「編集」することが私の主な仕事です。<br><br>
-                            私一人ではなく、数多くのクリエイターと力を合わせ、ご満足いただく成果物をつくりあげていきます。<br><br>
-                            執筆や編集という分野はまだまだ無限の可能性を秘めています。時代の変化を楽しみつつ、そして時代に合わせた、その時々に合った執筆・編集をしていき、お客様にご満足頂く。その気持ちを大切に一歩一歩前へ進んでいきます。
-                        </div>
-
+                <div class="message-erea">
+                    <div class="message-text-area">
+                        弊社のサイトをご覧いただき、誠にありがとうございます。代表取締役の中村昌弘です。<br><br>
+                        私は2016年にライターとして独立してから、数多くのお客様とお仕事させて頂きました。独立当初は、SEOメディアへの記事執筆がメインでしたが、ありがたいことに段々と仕事の幅が広がってきました。<br><br>
+                        LPやメルマガをはじめとするセールスライティング、Webメディアのコンサルティング、法人向けの文章講義、そして書籍の執筆・編集業務。そのすべてに「文章」が関わっており、その文章を「取材」「執筆」「編集」することが私の主な仕事です。<br><br>
+                        私一人ではなく、数多くのクリエイターと力を合わせ、ご満足いただく成果物をつくりあげていきます。<br><br>
+                        執筆や編集という分野はまだまだ無限の可能性を秘めています。時代の変化を楽しみつつ、そして時代に合わせた、その時々に合った執筆・編集をしていき、お客様にご満足頂く。その気持ちを大切に一歩一歩前へ進んでいきます。
                     </div>
-
                     <div class="message-profile">
                         <div class="box">
                             <div class="message-profile-name">代表取締役 中村昌弘</div>
                             <div class="message-profile-text">
-                                1985年生まれ埼玉県出身。立教大学を卒業後、マンションディベロッパーへ入社。その後は人事コンサル系の会社へ転職し、2016年2月に独立。独立と同時にWebライターをはじめる。
+                                1985年生まれ埼玉県出身。立教大学を卒業後、マンションディベロッパーへ入社。
+                            </div>
+                            <div class="message-profile-text">
+                                その後は人事コンサル系の会社へ転職し、2016年2月に独立。
+                            </div>
+                            <div class="message-profile-text">
+                                独立と同時にWebライターをはじめる。
+                            </div>
+                            <div class="message-profile-text">
+                                2022年に株式会社なかむら編集室を設立。
                             </div>
                         </div>
                         <div class="box">
                             <img src="./Designimage/09-message-icon.jpg" alt="中村さんアイコン" class="message-photo">
                         </div>
                     </div>
-                    <div class="message-links">
-                        <div class="links-portfolio">
-                            <a href="#" class="linkbtn">中村のポートフォリオ &gt;</a>
-                        </div>
-                        <div class="links-media">
-                            <a href="#" class="linkbtn">運営しているメディア &gt;</a>
-                        </div>
+                </div>
+                <div class="message-links">
+                    <div class="links-portfolio">
+                        <a href="https://nakamura-editing.co.jp/writer/" class="linkbtn">運営しているメディア &gt;</a>
+                    </div>
+                    <div class="links-media">
+                        <a href="https://webwriterlab-line.com/" class="linkbtn">運営しているコミュニティ &gt;</a>
                     </div>
                 </div>
             </div>
@@ -656,9 +657,9 @@
             </div>
             <div class="footer-bottom">
                 <nav class="footer-links">
-                    <a href="#" class="footer-link footer-link-underline">プライバシーポリシー</a>
-                    <a href="#" class="footer-link">利用規約</a>
-                    <a href="#" class="footer-link">特定商取引法に基づく表記の記載</a>
+                    <a href="/privacy-policy" class="footer-link footer-link-underline">プライバシーポリシー</a>
+                    <a href="/terms-of-service" class="footer-link">利用規約</a>
+                    <a href="/specified-commercial-transaction" class="footer-link">特定商取引法に基づく表記の記載</a>
                 </nav>
 
             </div>
@@ -672,10 +673,11 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/typing.js"></script>
+
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="js/book.js"></script>
     <script src="js/interview-famous.js"></script>
 </body>
