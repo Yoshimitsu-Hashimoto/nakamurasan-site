@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 900px) {
     .header.is-scroll {
-        top: 0;
+        top: 10px;
         padding: 1rem;
     }
     .menu-list {
@@ -83,12 +83,20 @@
     }
     .menu {
         justify-content: center;
+        flex-direction: column;
+        /* アニメ */
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        /* transform: translateY(-10px); */
+        transition: all 0.5s ease;
+        /* will-change: max-height, opacity, transform; */
     }
 
     /* メニュー開閉ボタン_sp */
-    .header.is-scroll .menu-button-sp {
+    /* .header.is-scroll .menu-button-sp {
         display: block !important;
-    }
+    } */
     .menu-button-sp {
         border: none;
         background: none;
@@ -96,19 +104,21 @@
         font-size: 1.5rem;
         font-family: var(--eiji_font);
         color: var(--main_color);
+        display: block !important;
     }
-
-    .menu {
-        display: none;
-        flex-direction: column;
-    }
-
     .menu.is-open {
         display: flex;
+        flex-direction: column;
+        max-height: 600px;
+        opacity: 1;
+        /* transform: translateY(0); */
     }
-
     .header.is-scroll .menu.is-open {
-        padding: 2rem;
+        padding: 1rem;
+    }
+    .header.is-scroll .menu {
+        height: auto;
+        padding: 0;
     }
 }
 
