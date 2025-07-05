@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-gsap.registerPlugin(ScrollTrigger);
+// document.addEventListener('DOMContentLoaded', function () {
+// gsap.registerPlugin(ScrollTrigger);
 
 // 表示パララックス
   //   const items = document.querySelectorAll(".service-item");
