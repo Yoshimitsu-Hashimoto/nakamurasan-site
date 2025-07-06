@@ -122,6 +122,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .header.is-scroll {
+        left: 75%;
+    }
+}
+
 /* 暗転演出 */
 .is-none {
     display: none;
