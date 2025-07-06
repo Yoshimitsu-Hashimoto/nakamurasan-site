@@ -209,8 +209,8 @@ a {
 .interview-content {
     max-width: 600px;
     margin: auto;
-    width: 100%;
-    padding: 0 1rem;
+    width: 80%;
+    /* padding: 0 1rem; */
     position: relative;
 }
 
@@ -245,6 +245,10 @@ a {
     #web-writing {
         padding: 2rem 1rem;
     }
+    #interview-personal {
+        padding: 0;
+        padding-top: 5rem;
+    }
 }
 
 /* ヒーローセクション */
@@ -278,7 +282,7 @@ h1::before {
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
-    width: 240px;
+    width: 260px;
     height: 240px;
     position: absolute;
     top: 0;
@@ -295,6 +299,13 @@ h1::before {
     width: 85%;
     max-width: 1000px;
     z-index: 10;
+}
+
+@media screen and (max-width: 980px) {
+    h1::before {
+        top: 100%;
+        left: 70%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -410,6 +421,12 @@ h1::before {
 .titleArea {
     text-align: center;
     padding-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .media-container .titleArea {
+        padding-top: 0;
+    }
 }
 .mybook-content .h3title {
     position: relative;
@@ -1352,21 +1369,6 @@ h1::before {
     border-left: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .interview-text-left::before {
-        top: auto;
-        left: 47%;
-        bottom: -11px;
-        transform: rotate(-90deg);
-    }
-    .interview-text-right::before {
-        top: auto !important;
-        left: 48% !important;
-        bottom: -11px !important;
-        transform: rotate(90deg) !important;
-    }
-}
-
 .interview-text-right::before {
     position: absolute;
     content: "";
@@ -1380,7 +1382,21 @@ h1::before {
     border-bottom: 10px solid transparent;
     border-left: 14px solid var(--white);
     border-right: 0;
-    filter: drop-shadow(2px 0px 0px var(--main_color));
+    filter: drop-shadow(1px 0px 0px var(--main_color));
+}
+@media screen and (max-width: 768px) {
+    .interview-text-left::before {
+        top: auto;
+        left: 47%;
+        bottom: -15px;
+        transform: rotate(-90deg);
+    }
+    .interview-text-right::before {
+        top: auto !important;
+        left: 48% !important;
+        bottom: -15px !important;
+        transform: rotate(90deg) !important;
+    }
 }
 
 .interview-image img {
@@ -1442,10 +1458,11 @@ h1::before {
     background-color: var(--white);
     padding: 0.7rem 1rem;
     border-radius: 50%;
+    border: solid 1px var(--white);
     box-shadow:
-        inset -5px -5px 10px 0px #ffffff80,
-        inset 5px 5px 5px 0px #6161614d,
-        -1px 5px 5px 0px #6161614d;
+        inset -3px -3px 4px 0px #dfdfdf80,
+        inset 0px 0px 3px 0px #9797974d,
+        -4px 0px 7px 0px #6161614d;
 }
 
 @media (max-width: 1024px) {
@@ -1673,7 +1690,7 @@ h1::before {
     height: 200px;
     top: 0;
     left: 75%;
-    background-image: url(/images/web-writing.svg);
+    background-image: url(../images/web-writing.svg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -2340,7 +2357,7 @@ section {
     }
     .media-divider .h3title::after {
         left: 50%;
-        top: -168px;
+        top: -119px;
     }
     #web-writing .interview-company-text-area::after {
         left: 70%;
@@ -2352,5 +2369,13 @@ section {
         margin-left: 4px;
         margin-right: 4px;
     }
-    /* .cardDesign__shadow,.media-divider .h3title::after,が原因でレスポンシブがうまくいかない */
+
+    #interview-company::after {
+        bottom: -80px;
+        left: -14px;
+    }
+
+    .interview-pagination {
+        width: 35%;
+    }
 }
