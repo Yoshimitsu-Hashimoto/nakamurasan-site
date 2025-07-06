@@ -181,11 +181,11 @@ a {
     position: absolute;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .cardDesign::after {
         display: none;
     }
-}
+} */
 
 .cardDesign::before {
     content: "";
@@ -477,8 +477,6 @@ h1::before {
     position: absolute;
     top: -190px;
     left: 80%;
-    /* background-color: var(--accent_color); */
-    /* transform: rotate(15deg); */
 }
 
 /* 講演・登壇 */
@@ -2172,11 +2170,11 @@ section {
         -1px 5px 10px 0px #4343434d;
 }
 
-.message-balloon {
+/* .message-balloon {
     margin-bottom: 2rem;
-}
+} */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .message-flex {
         flex-direction: column;
         gap: 32px;
@@ -2197,9 +2195,9 @@ section {
         left: 40px;
         transform: rotate(90deg);
     }
-}
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .message-photo {
         width: 160px;
         height: 160px;
@@ -2226,14 +2224,14 @@ section {
     .message-balloon::after {
         top: -14px;
     }
-}
+} */
 
-.company-corner-decoration {
+/* .company-corner-decoration {
     position: absolute;
     z-index: 1;
-}
+} */
 
-.company-corner-decoration.top-left {
+/* .company-corner-decoration.top-left {
     left: -40px;
     top: 60px;
 }
@@ -2241,9 +2239,9 @@ section {
 .company-corner-decoration.bottom-right {
     right: -40px;
     bottom: 40px;
-}
+} */
 
-.company-title,
+/* .company-title,
 .contact-title {
     margin-bottom: 48px;
     position: relative;
@@ -2251,7 +2249,7 @@ section {
     text-align: left;
 }
 
-.company-table {
+ .company-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 1.15rem;
@@ -2262,19 +2260,21 @@ section {
     text-align: left;
     font-weight: normal;
     padding: 16px 12px;
-    /* width: 160px; */
-}
+    width: 160px;
+}*/
 
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.15rem;
+    color: var(--black);
+}
 .company-table tr {
     border-bottom: 1px solid #bbb;
 }
 
-@media screen and (max-width: 768px) {
-    .company-table tr {
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem;
-    }
+/* @media screen and (max-width: 768px) {
+
     .company-table th {
         padding: 0 !important;
     }
@@ -2291,8 +2291,9 @@ section {
 .company-table ul {
     margin: 0;
     padding-left: 1.2em;
-}
+} */
 
+/*
 @media (max-width: 768px) {
     .company-content {
         padding: 32px 20px 24px 20px;
@@ -2303,7 +2304,7 @@ section {
     }
 
     .company-table th {
-        /* width: 120px; */
+        width: 120px;
         padding: 12px 8px;
     }
 
@@ -2323,4 +2324,37 @@ section {
         flex-direction: column;
         gap: 12px;
     }
+} */
+
+.company-table-list {
+    padding-left: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .company-table tr {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        align-items: flex-start;
+    }
+    .company-table th {
+        padding: 0 !important;
+    }
+    .company-table td {
+        padding: 0rem !important;
+    }
+
+    .cardDesign__shadow {
+        display: none;
+    }
+    .media-divider .h3title::after {
+        left: 50%;
+        top: -168px;
+    }
+    #web-writing .interview-company-text-area::after {
+        left: 70%;
+        bottom: -60%;
+        top: auto;
+    }
+    /* .cardDesign__shadow,.media-divider .h3title::after,が原因でレスポンシブがうまくいかない */
 }
