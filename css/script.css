@@ -38,7 +38,7 @@
     height: auto;
 }
 /* スライドの動き等速 */
-.bookshelf-swiper {
+.bookshelf-container .swiper-wrapper {
     transition-timing-function: linear;
 }
 /* 画像のサイズ調整 */
