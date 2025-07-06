@@ -468,16 +468,17 @@ h1::before {
 }
 .media-divider .h3title::after {
     content: "";
-    background-image: url(../images/dummy.png);
+    background-image: url(../images/media.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
-    width: 250px;
-    height: 130px;
+    width: 150px;
+    height: 113px;
     position: absolute;
-    top: -145px;
-    left: 56%;
-    transform: rotate(15deg);
+    top: -190px;
+    left: 80%;
+    /* background-color: var(--accent_color); */
+    /* transform: rotate(15deg); */
 }
 
 /* 講演・登壇 */
@@ -1075,6 +1076,23 @@ h1::before {
     margin: 0 auto;
 }
 
+.speaking-content {
+    position: relative;
+}
+
+.speaking-content::after {
+    content: "";
+    background-image: url(../images/speaking.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 113px;
+    position: absolute;
+    transform: scale(-1, 1);
+    z-index: 2;
+}
+
 .speaking-title {
     font-size: 21px;
     text-align: center;
@@ -1278,6 +1296,24 @@ h1::before {
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+
+#interview-famous .h3title {
+    position: relative;
+}
+#interview-famous .h3title::before {
+    content: "";
+    background-image: url(../images/interview-famous.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 140px;
+    height: 113px;
+    position: absolute;
+    top: -94px;
+    left: 62%;
+    z-index: -1;
+    transform: scaleX(-1);
 }
 
 @media screen and (max-width: 768px) {
@@ -1640,11 +1676,11 @@ h1::before {
 #web-writing .interview-company-text-area::after {
     content: "";
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
     top: 0;
-    left: 60%;
-    background-image: url(/images/fv.png);
+    left: 75%;
+    background-image: url(/images/web-writing.svg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1909,6 +1945,22 @@ svg circle {
     }
 }
 
+/* 企業インタビュー */
+#interview-company {
+    position: relative;
+}
+#interview-company::after {
+    content: "";
+    background-image: url(../images/interview.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 135px;
+    position: absolute;
+    transform: scale(-1, 1);
+}
+
 /* --- interview-personal（人物インタビュー）カード --- */
 .interview-personal-block {
     display: flex;
@@ -1986,7 +2038,21 @@ svg circle {
 
 #book-writing {
     background-color: #d6e9ff54;
+    position: relative;
 }
+#book-writing::after {
+    content: "";
+    background-image: url(../images/books.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 130px;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
 .bookwriting-item {
     display: flex;
     flex-direction: column;
@@ -2068,11 +2134,11 @@ section {
         flex-direction: column-reverse;
         align-items: center;
     }
-    #web-writing .interview-company-text-area::after {
+    /* #web-writing .interview-company-text-area::after {
         width: 200px;
         height: 200px;
         left: 8%;
-    }
+    } */
 }
 
 .links-portfolio .linkbtn {
