@@ -110,6 +110,27 @@
         color: var(--main_color);
     }
 
+    /* 初期状態 */
+    .open-button {
+        display: inline;
+    }
+    .close-button {
+        display: none;
+    }
+
+    /* ヘッダーがスクロール状態のときも close-button は非表示にしておく */
+    .header.is-scroll .close-button {
+        display: none;
+    }
+
+    /* メニューが開いたときに切り替え */
+    .header.menu-open.is-scroll .open-button {
+        display: none;
+    }
+    .header.menu-open.is-scroll .close-button {
+        display: block;
+    }
+
     /* メニューリスト初期値 */
     .menu-list-section {
         overflow: hidden;
