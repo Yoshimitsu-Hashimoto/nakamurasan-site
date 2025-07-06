@@ -8,7 +8,9 @@
 }
 
 /* 固定PCの時非表示 */
-.menu-button-sp,
+.menu-button-sp {
+    display: none !important;
+}
 .logosp {
     display: none !important;
 }
@@ -110,17 +112,27 @@
 
     /* メニューリスト初期値 */
     .menu-list-section {
-        display: none;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.4s ease;
     }
+
     .header.is-scroll {
         top: 1%;
         padding: 1rem;
+        right: -50px;
     }
 
     /* クリック後 */
     .menu.is-open .menu-list-section {
-        display: block;
         padding: 1rem 0.5rem 0;
+        max-height: 600px;
+        opacity: 1;
+    }
+    .header.is-scroll.menu-open {
+        width: 70%;
+        transition: width 0.4s ease;
     }
 }
 

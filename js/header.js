@@ -18,4 +18,5 @@ const menuButton = document.querySelector(".menu-button-sp");
 
   menuButton.addEventListener("click", function () {
     menu.classList.toggle("is-open");
+    header.classList.toggle("menu-open");
   });
