@@ -28,6 +28,7 @@
 /* スライドの動き等速 */
 .bookshelf-container .swiper-wrapper {
     transition-timing-function: linear;
+    align-items: flex-end;
 }
 /* 画像のサイズ調整 */
 .bookshelf-swiper img {
