@@ -168,6 +168,7 @@ a {
 }
 
 .cardDesign::after {
+    display: none;
     content: "";
     position: absolute;
     border: solid 1px var(--main_color);
@@ -2168,8 +2169,8 @@ section {
         top: -128px;
     }
     #web-writing .interview-company-text-area::after {
-        left: 70%;
-        bottom: -60%;
+        left: 64%;
+        bottom: -68%;
         top: auto;
     }
 
