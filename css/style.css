@@ -564,7 +564,10 @@ h1::before {
     }
 
     .media-wrapper::after {
-        top: -147px;
+        top: -132px;
+        left: 34%;
+        width: 174px;
+        height: 128px;
     }
     .interview-wrapper::after {
         bottom: -153px;
