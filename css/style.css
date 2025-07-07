@@ -168,7 +168,6 @@ a {
 }
 
 .cardDesign::after {
-    display: none;
     content: "";
     position: absolute;
     border: solid 1px var(--main_color);
@@ -179,6 +178,15 @@ a {
     top: 15px;
     left: 15px;
     z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .cardDesign::after {
+        width: calc(100% - 15px);
+        height: 100%;
+        top: 7px;
+        left: 18px;
+    }
 }
 
 .cardDesign::before {
