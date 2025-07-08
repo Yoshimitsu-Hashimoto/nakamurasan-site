@@ -1156,6 +1156,15 @@ h1::before {
 .speaking-card p {
     margin-bottom: 0;
 }
+
+.interview-personal-block a,
+.speaking-card a {
+    color: var(--black);
+}
+.interview-personal-bold {
+    color: var(--main_color);
+}
+
 .speaking-container .swiper-slide {
     display: flex;
     height: auto;
@@ -1989,7 +1998,7 @@ svg circle {
 }
 
 /* --- interview-personal（人物インタビュー）カード --- */
-.interview-personal-block {
+.interview-personal-block a {
     display: flex;
     align-items: stretch;
     margin-bottom: 2rem;
@@ -1998,7 +2007,7 @@ svg circle {
     width: 100%;
 }
 
-.interview-personal-block:hover {
+.interview-personal-block a:hover {
     transform: translate(-10px, -10px);
     filter: drop-shadow(7px 7px 0px var(--main_color));
 }
@@ -2028,7 +2037,7 @@ svg circle {
     height: 100%;
     flex: 1;
 }
-.interview-personal-link {
+.interview-personal-bold {
     text-align: right;
     padding-top: 8px;
     margin-bottom: 0;
@@ -2228,7 +2237,7 @@ section {
         align-items: center;
     }
 
-    .interview-personal-block {
+    .interview-personal-block a {
         flex-direction: column;
         height: auto;
     }
