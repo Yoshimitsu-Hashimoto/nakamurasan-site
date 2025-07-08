@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const swiper = new Swiper('.interview-swiper', {
   direction: 'vertical',
   loop: true,
+  allowTouchMove: false,
 slidesPerView: 2.5,
 spaceBetween: 10,
 breakpoints: {

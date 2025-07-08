@@ -532,7 +532,7 @@ h1::before {
     height: 148px;
     margin: 0 auto;
     position: absolute;
-    top: -48%;
+    top: -50%;
     left: 50%;
 }
 
@@ -1056,30 +1056,21 @@ h1::before {
 }
 .media-images {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 8px;
-    border: none !important;
-    border-radius: 0 !important;
-    background: none !important;
-    box-shadow: none !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
 }
-.media-image-container {
-    border: none !important;
-    border-radius: 0 !important;
-    background: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
+.media-images {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
 }
-.media-image {
-    max-width: 180px;
+.media-image-container img {
+    max-width: 110px;
     width: 100%;
     height: auto;
-    object-fit: contain;
-    box-shadow: none;
-    display: block;
 }
+
 .media-image-text {
     font-size: 1.6rem;
     font-weight: bold;
@@ -1312,6 +1303,21 @@ h1::before {
 #interview-famous .h3title {
     position: relative;
 }
+#interview-personal .titleArea {
+    padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #interview-famous .h3title {
+        background-color: var(--white);
+        display: inline-block;
+    }
+    #interview-personal .h3title {
+        background-color: var(--white);
+        display: inline-block;
+    }
+}
+
 #interview-famous .h3title::before {
     content: "";
     background-image: url(../images/interview-famous.svg);
@@ -1434,7 +1440,7 @@ h1::before {
 .interview-pagination {
     position: absolute;
     transform: rotate(-90deg);
-    top: 35%;
+    top: 0;
     left: -20%;
     right: 0;
     width: 20%;
@@ -1581,6 +1587,7 @@ h1::before {
     }
 }
 
+/* 挨拶 */
 #message {
     /* background: #fff; */
     padding: 100px 0 80px 0;
@@ -2028,6 +2035,7 @@ svg circle {
 }
 
 /* --- book-writing（書籍ブックライティング）グリッド --- */
+
 .bookwriting-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2056,7 +2064,9 @@ svg circle {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 280px;
 }
+
 .bookwriting-image-link {
     display: block;
     width: 100%;
@@ -2071,6 +2081,11 @@ svg circle {
     display: block;
     font-size: 0.75rem;
     color: var(--black);
+}
+
+.bookshelf-container {
+    line-height: 1.3;
+    text-align: center;
 }
 
 .message-profile-name {
@@ -2160,6 +2175,10 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+    #book-writing::after {
+        width: 110px;
+        height: 135px;
+    }
     .company-table tr {
         display: flex;
         flex-direction: column;
