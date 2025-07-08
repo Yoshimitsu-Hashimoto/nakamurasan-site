@@ -2,16 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.bookshelf-swiper', {
     loop: true,
     slidesPerView: 2,
-    spaceBetween: 8,
+    spaceBetween: 16,
     breakpoints: {
       768: {
         slidesPerView: 3,
       },
       980: {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
       },
       1024: {
-        slidesPerView: 5,
+        slidesPerView: 4,
+      },
+            1280: {
+        slidesPerView: 6,
       },
     },
     speed: 10000,

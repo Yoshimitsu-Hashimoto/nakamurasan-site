@@ -507,7 +507,7 @@ h1::before {
 .mybook-item {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 28px;
     padding: 2rem 1rem;
     border-bottom: solid 1px var(--sub_color);
 }
@@ -2081,6 +2081,8 @@ svg circle {
     display: block;
     font-size: 0.75rem;
     color: var(--black);
+    text-align: left;
+    max-width: 200px;
 }
 
 .bookshelf-container {
@@ -2244,4 +2246,29 @@ section {
         border-right: solid 1px var(--main_color);
         border-top: none !important;
     }
+}
+
+/* 文字数制限 */
+
+/* 講演・登壇セクション */
+.speaking-container .speaking-card p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/* 人物インタビュー */
+.interview-personal-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.interview-personal-subtitle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
