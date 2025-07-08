@@ -14,16 +14,15 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 4,
       },
             1280: {
-        slidesPerView: 6,
+        slidesPerView: 5,
       },
     },
-    speed: 10000,
+    speed: 9000,
     autoplay: {
       delay: 0,
     },
-    // navigation: {
-    //   nextEl: '.bookshelf-container .swiper-button-next',
-    //   prevEl: '.bookshelf-container .swiper-button-prev',
-    // },
+
   });
 });
+
+// 表示数-1で自動スライドスタートします。それ以下にするとスライドしない。

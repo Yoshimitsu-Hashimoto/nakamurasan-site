@@ -32,10 +32,12 @@
     font-family: var(--eiji_font);
 }
 
-.logo {
+.logo a{
     display: flex;
-    align-items: center;
-    gap: 12px;
+    align-items: center !important;
+    gap: 10px;
+        flex-wrap: wrap;
+        color: var(--black);
 }
 
 /* ＝＝＝＝＝＝＝ ヘッダースクロールスタイル ＝＝＝＝＝＝＝ */
@@ -80,7 +82,7 @@
         line-height: 1;
         padding-bottom: 1rem;
     }
-    .menu-item.logosp {
+    .menu-itemsp {
         padding-bottom: 0;
     }
 
