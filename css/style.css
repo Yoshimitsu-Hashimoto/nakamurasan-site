@@ -707,17 +707,16 @@ h1::before {
     transform: translateX(5px);
 }
 
-    .logo-text {
-        font-size: 18px;
-        font-weight: bold;
-    }
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* レスポンシブ対応 */
 @media (max-width: 1024px) {
     #hero {
         padding: 30px 40px;
     }
-
 
     .logo-icon {
         font-size: 24px;
@@ -921,7 +920,6 @@ h1::before {
 }
 
 @media (max-width: 480px) {
-
     .logo-icon {
         font-size: 18px;
         width: 28px;
@@ -2248,6 +2246,11 @@ section {
         border-left: solid 1px var(--main_color);
         border-right: solid 1px var(--main_color);
         border-top: none !important;
+    }
+
+    /* スライダー制御 */
+    .interview-swiper {
+        pointer-events: none;
     }
 }
 
